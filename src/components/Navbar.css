@@ -29,6 +29,11 @@
   border-bottom: 2px solid #635beb;
 }
 
+.navbar-btns {
+  display: flex;
+  gap: 20px;
+}
+
 .navbar-button {
   padding: 8px 20px;
   color: #e5e5e5;
@@ -41,10 +46,21 @@
   font-weight: 500;
 }
 
+.navbar-btn-secundary {
+  border: 2px solid #635beb;
+  color: #635beb;
+  background-color: #222;
+}
+
 .navbar-button:hover {
   color: #222;
   background-color: #fff;
   transition: all 0.2s ease-in;
+}
+
+.navbar-btn-secundary:hover {
+  background-color: #635beb;
+  color: #222;
 }
 
 .modal-background {
@@ -99,6 +115,11 @@
 
 .modal-body {
   padding: 30px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .modal-body form {
@@ -151,28 +172,21 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
   .navbar {
     padding: 0 30px;
+    flex-direction: column;
+
+    padding: 20px;
+    height: 120px;
   }
 
   .navbar-item {
     margin-right: 10px;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .navbar {
-    padding: 0 10px;
-    font-size: 16px;
+    margin-bottom: 5px;
   }
 
-  .navbar-item {
-    margin-right: 10px;
-  }
-
-  .navbar-button {
-    padding: 6px 18px;
-    font-size: 16px;
+  .navbar-btns {
+    gap: 10px;
   }
 }
