@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import React from "react";
 import Hero from "./components/Hero";
 import Form from "./components/Form";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar></Navbar>
       <Hero></Hero>
       <Form></Form>
+      <Footer></Footer>
     </div>
   );
 }
