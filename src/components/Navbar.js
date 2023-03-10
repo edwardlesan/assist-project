@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../components/Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [open, setOpen] = React.useState(false);
@@ -48,14 +49,14 @@ function Navbar() {
       <nav className="navbar">
         <ul className="navbar-list">
           <li className="navbar-item">
-            <a className="navbar-link" href="index.html">
+            <Link className="navbar-link" to="index.html">
               Home
-            </a>
+            </Link>
           </li>
           <li className="navbar-item">
-            <a className="navbar-link" href="/">
+            <Link className="navbar-link" to="/profile">
               Profile
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="navbar-btns">
