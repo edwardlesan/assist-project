@@ -1,7 +1,14 @@
 import React from "react";
+import "./Profile.css";
 
 function Profile() {
-  return <h1>Profile</h1>;
+  return (
+    <>
+      <div className="profile-container">
+        <div className="profile-box"></div>
+      </div>
+    </>
+  );
 }
 
 export default Profile;
