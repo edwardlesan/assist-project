@@ -11,4 +11,45 @@
   background-color: #c4c4c4;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-box {
+  width: 300px;
+}
+
+.left-box h1 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 42px;
+  font-weight: 300;
+}
+
+.left-box img {
+  width: 200px;
+}
+
+.right-box {
+  width: 450px;
+}
+
+.profile-form input {
+  outline: none;
+  border: none;
+}
+
+.profile-button {
+  color: #e5e5e5;
+  background-color: #635beb;
+}
+
+.profile-button:hover {
+  cursor: pointer;
+  color: #222;
+  background-color: #e5e5e5;
+  transition: all 0.2s ease-in;
 }
